@@ -1,0 +1,36 @@
+.ticket {
+  background: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.ticket__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ticket__button-random {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.button-show-results {
+  display: block;
+  font-size: 16px;
+  background: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: 1px solid #DDDDDD;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.button-show-results:disabled {
+  cursor: not-allowed;
+}

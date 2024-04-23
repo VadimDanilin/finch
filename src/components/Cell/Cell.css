@@ -1,0 +1,37 @@
+.cell {
+  background: transparent;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell__inner {
+  font-size: 14px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+
+@media (hover: hover) {
+  .cell:hover .cell__inner {
+    height: 33px;
+    width: 33px;
+  }
+}
+
+.cell--active .cell__inner {
+  background: #FFD205;
+  border: none;
+  height: 33px;
+  width: 33px;
+}

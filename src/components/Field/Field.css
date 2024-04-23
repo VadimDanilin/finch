@@ -1,0 +1,14 @@
+.field__title {
+  margin-bottom: 15px;
+}
+
+.field__title-bold {
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.field__cells {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
