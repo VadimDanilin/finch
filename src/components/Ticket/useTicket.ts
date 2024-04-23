@@ -41,13 +41,8 @@ export const useTicket = (fields: IField[]) => {
   }
 
   const checkWin = (conditionForWin: boolean) => {
-    if (conditionForWin) {
-      setIsTicketWon(true)
-      sendTicket(selectedCells[0], selectedCells[1], true)
-    } else {
-      setIsTicketWon(false)
-      sendTicket(selectedCells[0], selectedCells[1], false)
-    }
+    setIsTicketWon(conditionForWin)
+    sendTicket(selectedCells[0], selectedCells[1], conditionForWin)
   }
 
   return {
